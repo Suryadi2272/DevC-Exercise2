@@ -7,5 +7,25 @@
     <center>
         <h1>Kalkulator</h1>
     </center>
+     <form> 
+            <label> Masukan angka  Pertama </label><br/>
+            <input type="number" id="angka1" /><br/>
+            <label> Masukan Angka Berikutnya: </label> </br>
+            <input type="number" id="angka2"  />
+           <!-- <button type="submit" name="submit" class="btn btn-primary">Hitung</button><br/>-->
+                        
+            <button onclick="document.getElementById('hasil').value=parseInt(document.getElementById('angka1').value)+parseInt(document.getElementById('angka2').value)" type="button" name="btnhitung">Tambah </button> 
+
+            <button onclick="document.getElementById('hasil').value=parseInt(document.getElementById('angka1').value)-parseInt(document.getElementById('angka2').value)" type="button" name="btnhitung">Kurang </button> 
+    
+            <button onclick="document.getElementById('hasil').value=parseInt(document.getElementById('angka1').value)*parseInt(document.getElementById('angka2').value)" type="button" name="btnhitung">Kali </button> 
+    
+            <button onclick="document.getElementById('hasil').value=parseInt(document.getElementById('angka1').value)/parseInt(document.getElementById('angka2').value)" type="button" name="btnhitung">Bagi </button>  <br/><br/> 
+    
+            <label>Hasilnya:</label></br>
+            <input type="number" name="hasil" id="hasil" >
+           
+        </form>
+    
 </body>
 </html>
